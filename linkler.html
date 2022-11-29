@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #altmenu {
+            color: coral;
+            background-color: floralwhite;
+            border-color: blue;
+            border-style: dashed;
+            border-width: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: darkgoldenrod;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 15px;
+            text-decoration: none;
+            /*link altındaki çizgiyi yok eder.*/
+        }
+
+        a:link {
+            color: black;
+            /*ziyaret edilmemis link*/
+        }
+
+        a:hover {
+            color: aqua;
+            /*fare link üzerinde*/
+        }
+
+        a:visited {
+            color: brown;
+            /*ziyaret edilmiş link*/
+        }
+
+        a:active {
+            color: blueviolet;
+            /*fare tıklandığında*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Linklerin Biçimlendirilmesi</h1>
+    <nav id="altmenu">
+        <a href="index.html"> Anasayfa</a> |
+        <a href="urunlerimiz.html">Ürünlerimiz</a> |
+        <a href="bizkimiz.html">Biz kimiz?</a> |
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            border-style: solid;
+            border-color: green;
+        }
+
+        #buyuk {
+            border-style: solid;
+            width: 200px;
+            height: 100px;
+            background-color: rosybrown;
+            position: fixed;
+            /* kutunun sayfaya göre ayarlanmasını sağlar.*/
+            left: 20px;
+            z-index: 1;
+            /*kutunun üstte görünmesini sağlar.*/
+            border-radius: 50px;
+        }
+
+        #kucuk {
+            width: 100px;
+            height: 50px;
+            background-color: sienna;
+            position: relative;
+            /* kutunun taşınmasını sağlar.*/
+            left: 40px;
+            top: 80px;
+            /* position: absolute; <div id=kucuk> <div id=buyuk> içerisine alınarak uygulanır.*/
+            border-radius: 0px 0px 10px 10px;
+            border-width: 10px;
+            border-color: saddlebrown green;
+        }
+
+        #kutu {
+            border-style: double;
+            border-color: aqua;
+            height: 100px;
+            position: relative;
+            top: 100px;
+            /* overflow: visible; Taşan kısım alttan devam eder.*/
+            /* overflow: hidden; Taşan kısım gösterilmez. */
+            /* overflow: scroll; Taşma gösterilmez kaydırma çubuğu ile gösterilir. */
+            overflow: auto;
+        }
+
+        #golge {
+            border-style: dashed;
+            border-color: blue;
+            border-width: 10px;
+            height: 50px;
+            margin: 10px;
+            padding: 20px;
+            position: relative;
+            top: 150px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px yellow inset;
+            /* 1,2 Gölge Oluşturma 3,bulanıklastırma-- inset (içkısım)*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buyuk"></div>
+    <div id="kucuk"></div>
+    <div id="kutu"> Kutu İçeriğinin Taşması <br>
+        skddf fjfjfıjef jıfjfjf <br>djfjfefj fjfj <br>
+        ff fıejf ofejfıef ıfjef <br>jeıfeıfeı djeffj feuf <br>fefjcfıf <br>
+        dhuffu feujf duefu <br>udfhuueuffıe jfı <br>jfffjıe ffj gk <br>ftkg
+        jgreggtgjty röaepsd <br>frı ldpe ffek gorkgtrjgjır rgokg
+    </div>
+    <div id="golge"> dhhsdeuf duefuf jfejf jdfjef kefeı jfeı <br>
+        jfjfıf fjıefjef jıffej <br>jfejfjef fefjfgjr lhkyhk </div>
+</body>
+
+</html>
